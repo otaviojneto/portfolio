@@ -1,4 +1,5 @@
 {
+  "homepage": "https://otaviojneto.github.io/portfolio",
   "name": "my-portolio",
   "private": true,
   "version": "0.0.0",
@@ -7,9 +8,12 @@
     "dev": "vite --open",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.3.0",
