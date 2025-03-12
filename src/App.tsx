@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { GlobalStyle } from "./styles";
+import Home from "./Page/Home";
 
 const Container = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ function App() {
     <>
       <GlobalStyle />
       <Container>
-        <h1>Hello, Styled Components!</h1>
+        <Home />
       </Container>
     </>
   );
