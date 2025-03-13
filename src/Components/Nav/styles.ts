@@ -31,12 +31,13 @@ export const ContainerNav = styled.div`
   display: flex;
   left: 20%;
   justify-content: space-between;
+  max-width: 1200px;
   padding: 8px 40px;
   position: fixed;
   top: 20px;
   width: 60%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1088px) {
     left: 3%;
     padding: 8px 20px;
     width: 94%;
@@ -49,7 +50,7 @@ export const Brand = styled.img`
   height: 80px;
   width: 80px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1088px) {
     height: 40px;
     width: 40px;
   }
@@ -59,7 +60,7 @@ export const UlDesktop = styled.ul`
   display: flex;
   list-style: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1088px) {
     display: none;
   }
 `;
@@ -67,7 +68,7 @@ export const UlDesktop = styled.ul`
 export const UlMobile = styled.div`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1088px) {
     align-items: center;
     background-color: transparent;
     display: flex;
@@ -79,7 +80,7 @@ export const UlMobile = styled.div`
 export const MenuMobile = styled.ul<{ open: boolean }>`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1088px) {
     background-color: #ffffff;
     border-radius: 30px;
     display: block;
@@ -97,13 +98,13 @@ export const MenuMobile = styled.ul<{ open: boolean }>`
 export const Icon = styled.img`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1088px) {
     display: block;
   }
 `;
 
 export const List = styled.li`
-  @media (max-width: 768px) {
+  @media (max-width: 1088px) {
     border-bottom: 1px solid #d2d2d2;
 
     &:last-of-type {
