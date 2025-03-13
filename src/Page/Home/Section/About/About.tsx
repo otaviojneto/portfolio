@@ -16,6 +16,7 @@ const About: React.FC = () => {
     "Tailwind",
     "SASS",
     "Bootstrap",
+    "Firebase",
     "Git",
     "GraphQL",
     "Storybook",
@@ -36,13 +37,13 @@ const About: React.FC = () => {
       <S.Image />
       <Container>
         <S.About>
-          <Title description="Sobre mim" />
+          <Title align="center" size="40px" description="Sobre mim" />
 
-          <p>
+          <S.Text>
             Aqui você encontrará mais informações sobre mim, o que eu faço e
             minhas habilidades atuais, principalmente em termos de programação e
             tecnologia.
-          </p>
+          </S.Text>
 
           <S.Experience>
             <S.BaseDescription>

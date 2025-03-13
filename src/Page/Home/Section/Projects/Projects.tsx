@@ -11,7 +11,7 @@ import jeep from "../../../../assets/jeep.jpg";
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "Lmh",
+      title: "Lmh Consultoria",
       description:
         "Plataforma especializada em consultoria imobiliária, que disponibiliza os serviços de orientação jurídica e análise documental em vendas e locações de imóveis,  assegurando que cada negociação ocorra com total segurança. Com um sistema intuitivo, os usuários podem pesquisar, ver fotos e descrições detalhadas dos imóveis disponíveis para locação e venda de nossos clientes, garantindo uma experiência transparente e confiável no mercado imobiliário.",
       buttonLink: "https://www.lmhconsultoria.com/",
@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
     {
       title: "Travel365",
       description:
-        "Plataforma de hospedagem para hotéis, conectando viajantes a experiências únicas. Com foco em e-commerce, oferece uma jornada completa – desde a pesquisa e comparação até a reserva final, garantindo praticidade, segurança e as melhores ofertas para sua viagem.",
+        "Plataforma de hospedagem para hotéis, conectando viajantes a experiências únicas. Com foco em e-commerce, oferece uma jornada completa, desde a pesquisa e comparação até a reserva final, garantindo praticidade, segurança e as melhores ofertas para sua viagem.",
       buttonLink: "https://app.otabuilder.com/ganhepontoslivelo",
       buttonText: "Ver Site",
       imageUrl: travel,
@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
   return (
     <S.ContainerProjects>
       <Container>
-        <Title description="Projetos" />
+        <Title align="center" size="40px" description="Projetos" />
         {projects.map((project) => (
           <ShowcaseCard
             reverse={project.reverse}

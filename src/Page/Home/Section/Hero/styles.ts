@@ -31,16 +31,13 @@ export const ContainerMe = styled.div`
   }
 
   @media (max-width: 1088px) {
+    height: 75vh;
     padding-inline: 20px;
   }
 `;
 
 export const AboutMe = styled.div`
   max-width: 800px;
-
-  @media (max-width: 1088px) {
-    margin-top: -200px;
-  }
 `;
 
 export const Title = styled.h1`
@@ -53,8 +50,13 @@ export const Title = styled.h1`
 
 export const Text = styled.p`
   color: #ffffff;
+  font-size: 16px;
   margin-top: 10px;
   opacity: 0;
   animation: ${fadeInUp} 1s ease-out forwards;
   animation-delay: 1s; // Delay para o texto aparecer depois do título
+
+  @media (max-width: 1088px) {
+    font-size: 14px;
+  }
 `;

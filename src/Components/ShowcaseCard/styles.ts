@@ -8,10 +8,18 @@ export const Card = styled.div<{ reverse?: boolean }>`
   flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "none")};
   padding: 40px 0;
   width: 100%;
+
+  @media (max-width: 1088px) {
+    flex-direction: column;
+  }
 `;
 
 export const Image = styled.img`
   max-width: 450px;
+
+  @media (max-width: 1088px) {
+    width: 100%;
+  }
 `;
 
 export const Content = styled.div``;
@@ -36,5 +44,10 @@ export const Link = styled.a`
 
   &:hover {
     transform: translateY(-4px);
+  }
+
+  @media (max-width: 1088px) {
+    text-align: center;
+    width: 100%;
   }
 `;

@@ -31,6 +31,23 @@ export const Image = styled.div`
 
 export const About = styled.div`
   margin-top: 50px;
+
+  @media (max-width: 1088px) {
+    h1 {
+      text-align: start;
+      font-size: 28px;
+    }
+  }
+`;
+
+export const Text = styled.p`
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+
+  @media (max-width: 1088px) {
+    text-align: start;
+  }
 `;
 
 export const Experience = styled.div`

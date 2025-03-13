@@ -10,9 +10,10 @@ const Title: React.FC<TitleProps> = ({
   color,
   fontWeight,
   size,
+  align,
 }) => {
   return (
-    <S.Title color={color} size={size} fontWeight={fontWeight}>
+    <S.Title align={align} color={color} size={size} fontWeight={fontWeight}>
       {description}
     </S.Title>
   );
