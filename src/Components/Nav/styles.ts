@@ -29,13 +29,13 @@ export const ContainerNav = styled.div`
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   border-radius: 60px;
   display: flex;
-  left: 20%;
   justify-content: space-between;
   max-width: 1200px;
   padding: 8px 40px;
   position: fixed;
   top: 20px;
   width: 60%;
+  z-index: 10;
 
   @media (max-width: 1088px) {
     left: 3%;

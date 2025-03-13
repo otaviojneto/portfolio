@@ -22,8 +22,6 @@ const About: React.FC = () => {
     "Jest",
     "Testing Library",
     "Vite",
-    "ESLint",
-    "Prettier",
     "Scrum",
     "Kanban",
     "Figma",

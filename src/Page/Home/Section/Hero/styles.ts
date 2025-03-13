@@ -15,7 +15,7 @@ export const ContainerMe = styled.div`
   align-items: center;
   background-color: #0a001b;
   display: flex;
-  height: 100vh;
+  height: 70vh;
   justify-content: center;
   position: relative;
   width: 100%;

@@ -11,24 +11,21 @@ export const ContainerAbout = styled.section`
 `;
 
 export const Image = styled.div`
-  background-color: #0a001b;
+  background-blend-mode: darken;
+  background-color: #ffffff;
   background-image: url(${notePhone});
-  background-size: cover;
-  background-blend-mode: luminosity;
-  height: 347px;
-  margin-top: -82px;
-  width: 860px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 280px;
+  margin-top: -52px;
+  width: 100%;
   z-index: 1;
 
   @media (max-width: 1088px) {
-    background-color: #ffffff;
     background-image: url(${notePhoneMobile});
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     margin-top: -20px;
     height: 200px;
-    width: 100%;
   }
 `;
 

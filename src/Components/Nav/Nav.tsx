@@ -1,8 +1,8 @@
 import React from "react";
 import * as S from "./styles";
-import brand from "../../assets/brand_nt.svg";
-import hamburguer from "../../assets/hamburguer.svg";
-import close from "../../assets/close.svg";
+import brand from "../../icons/brand_nt.svg";
+import hamburguer from "../../icons/hamburguer.svg";
+import close from "../../icons/close.svg";
 
 export type NavProps = {
   img?: string | undefined;
