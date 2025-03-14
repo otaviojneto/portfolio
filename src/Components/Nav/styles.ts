@@ -83,6 +83,8 @@ export const MenuMobile = styled.ul<{ open: boolean }>`
   @media (max-width: 1088px) {
     background-color: #ffffff;
     border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     display: block;
     left: 0;
     list-style: none;
@@ -114,6 +116,8 @@ export const List = styled.li`
 `;
 
 export const Link = styled.a`
+  background-color: transparent;
+  border: none;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -132,6 +136,8 @@ export const Link = styled.a`
 `;
 
 export const LinkMobile = styled.a`
+  background-color: transparent;
+  border: none;
   align-items: center;
   cursor: pointer;
   display: flex;

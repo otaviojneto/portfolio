@@ -8,7 +8,11 @@ import petz from "../../../../assets/petz.jpg";
 import travel from "../../../../assets/365.jpg";
 import jeep from "../../../../assets/jeep.jpg";
 
-const Projects: React.FC = () => {
+export type ProjectsProps = {
+  id: string;
+};
+
+const Projects: React.FC<ProjectsProps> = ({ id }) => {
   const projects = [
     {
       title: "Lmh Consultoria",
@@ -46,7 +50,7 @@ const Projects: React.FC = () => {
     },
   ];
   return (
-    <S.ContainerProjects>
+    <S.ContainerProjects id={id}>
       <Container>
         <Title align="center" size="40px" description="Projetos" />
         {projects.map((project) => (

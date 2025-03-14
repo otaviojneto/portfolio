@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import GitHub from "../../../../Components/Icons/Github";
 import Linkedin from "../../../../Components/Icons/Linkedin";
+import WhatsApp from "../../../../Components/Icons/whatsapp";
 
 export const ContainerFooter = styled.div`
   background-color: #0a001b;
@@ -18,12 +19,23 @@ export const ContainerFooter = styled.div`
     width: 100%;
     top: 0;
   }
+
+  @media (max-width: 1088px) {
+    h1 {
+      text-align: center;
+    }
+  }
 `;
 
 export const ContentFooter = styled.div`
   color: #ffffff;
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+
+  @media (max-width: 1088px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const Link = styled.a`
@@ -88,8 +100,31 @@ export const IconLinkedin = styled(Linkedin)`
   }
 `;
 
+export const IconWhatsApp = styled(WhatsApp)`
+  fill: #ffffff;
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    fill: #0a001b;
+  }
+`;
+
 export const SocialMedias = styled.div`
   display: flex;
   margin-top: 10px;
   gap: 10px;
+
+  @media (max-width: 1088px) {
+    justify-content: center;
+  }
+`;
+
+export const LinkCurriculum = styled.div`
+  @media (max-width: 1088px) {
+    margin-top: 20px;
+
+    p {
+      text-align: center;
+    }
+  }
 `;

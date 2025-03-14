@@ -1,12 +1,13 @@
 import React from "react";
-import Nav from "../../../../Components/Nav";
 import * as S from "./styles";
 
-const Hero: React.FC = () => {
-  return (
-    <S.ContainerMe>
-      <Nav />
+export type HeroProps = {
+  id: string;
+};
 
+const Hero: React.FC<HeroProps> = ({ id }) => {
+  return (
+    <S.ContainerMe id={id}>
       <S.AboutMe>
         <S.Title>Bem vindo!</S.Title>
 

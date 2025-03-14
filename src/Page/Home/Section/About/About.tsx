@@ -4,7 +4,11 @@ import Title from "../../../../Components/Title";
 import { Container } from "../../styles";
 import Badge from "../../../../Components/Badge";
 
-const About: React.FC = () => {
+export type AboutProps = {
+  id: string;
+};
+
+const About: React.FC<AboutProps> = ({ id }) => {
   const skills = [
     "HTML",
     "CSS",
@@ -33,7 +37,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <S.ContainerAbout>
+    <S.ContainerAbout id={id}>
       <S.Image />
       <Container>
         <S.About>

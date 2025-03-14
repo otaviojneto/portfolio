@@ -3,12 +3,17 @@ import Title from "../../../../Components/Title";
 import { Container } from "../../styles";
 import * as S from "./styles";
 
-const Footer: React.FC = () => {
+export type FooterProps = {
+  id: string;
+};
+
+const Footer: React.FC<FooterProps> = ({ id }) => {
   return (
-    <S.ContainerFooter>
+    <S.ContainerFooter id={id}>
       <Container>
+        <Title color="#ffffff" size="24px" description="Contato" />
         <S.ContentFooter>
-          <div>
+          <S.LinkCurriculum>
             <Title color="#ffffff" size="20px" description="Neto Loureço" />
 
             <S.Text>Acesse meu curriculum:</S.Text>
@@ -19,14 +24,10 @@ const Footer: React.FC = () => {
             >
               Curriculum
             </S.Link>
-          </div>
+          </S.LinkCurriculum>
 
           <div>
-            <Title
-              color="#ffffff"
-              size="14px"
-              description="Perfis Profissionais"
-            />
+            <Title color="#ffffff" size="14px" description="Mídias Sociais" />
             <S.SocialMedias>
               <S.BorderIcon
                 target="_blank"
@@ -40,6 +41,13 @@ const Footer: React.FC = () => {
                 href="https://www.linkedin.com/in/otavio-lourenco-neto/"
               >
                 <S.IconLinkedin size={20} />
+              </S.BorderIcon>
+
+              <S.BorderIcon
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=13981402317"
+              >
+                <S.IconWhatsApp size={20} />
               </S.BorderIcon>
             </S.SocialMedias>
           </div>
