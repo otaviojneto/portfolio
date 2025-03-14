@@ -438,7 +438,7 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
   @media (max-width: 1088px) {
     font-size: 14px;
   }
-`,Qg=({id:u})=>Y.jsx(Yg,{id:u,children:Y.jsxs(Lg,{children:[Y.jsx(Gg,{children:"Bem vindo!"}),Y.jsx(Xg,{children:"Meu Nome Neto Lourenço, sou desenvolvedor front-end com mais de 3 anos de experiência focado em React. Tenho expertise na criação de interfaces intuitivas e eficientes, priorizando performance e escalabilidade. Além disso, estou sempre buscando aprimorar minhas habilidades, explorando novas tecnologias para criar soluções de alta qualidade."})]})}),Zg=ct.div`
+`,Qg=({id:u})=>Y.jsx(Yg,{id:u,children:Y.jsxs(Lg,{children:[Y.jsx(Gg,{children:"Bem vindo!"}),Y.jsx(Xg,{children:"Meu Nome é Neto Lourenço, sou desenvolvedor front-end com mais de 3 anos de experiência focado em React. Tenho expertise na criação de interfaces intuitivas e eficientes, priorizando performance e escalabilidade. Além disso, estou sempre buscando aprimorar minhas habilidades, explorando novas tecnologias para criar soluções de alta qualidade."})]})}),Zg=ct.div`
   background-color: #ffffff;
   padding-top: 40px;
   scroll-margin-top: 80px;
