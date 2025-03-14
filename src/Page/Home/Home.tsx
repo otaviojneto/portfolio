@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
+import Nav from "../../Components/Nav";
 import About from "./Section/About";
+import Footer from "./Section/Footer";
 import Hero from "./Section/Hero";
 import Projects from "./Section/Projects";
-import Footer from "./Section/Footer";
-import Nav from "../../Components/Nav";
 
 const Home: React.FC = () => {
   const handleScrollToSection = (section: string) => {
