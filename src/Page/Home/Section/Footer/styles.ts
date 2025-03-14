@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import GitHub from "../../../../Components/Icons/Github";
+import Linkedin from "../../../../Components/Icons/Linkedin";
 
 export const ContainerFooter = styled.div`
   background-color: #0a001b;
@@ -19,7 +21,9 @@ export const ContainerFooter = styled.div`
 `;
 
 export const ContentFooter = styled.div`
-  color: #ffffff !important;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const Link = styled.a`
@@ -48,4 +52,44 @@ export const Text = styled.p`
   color: #ffffff;
   font-size: 12px;
   margin-block: 10px;
+`;
+
+export const BorderIcon = styled.a`
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 32px;
+  transition: ease-in-out 0.2s;
+  width: 32px;
+
+  &:hover {
+    background-color: #ffffff;
+  }
+`;
+
+export const IconGitHub = styled(GitHub)`
+  fill: #ffffff;
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    fill: #0a001b;
+  }
+`;
+
+export const IconLinkedin = styled(Linkedin)`
+  fill: #ffffff;
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    fill: #0a001b;
+  }
+`;
+
+export const SocialMedias = styled.div`
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
 `;

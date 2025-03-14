@@ -1,9 +1,7 @@
 import React from "react";
-import * as S from "./styles";
-import { Container } from "../../styles";
 import Title from "../../../../Components/Title";
-import linkedin from "../../../../icons/linkedin.svg";
-import github from "../../../../icons/github.svg";
+import { Container } from "../../styles";
+import * as S from "./styles";
 
 const Footer: React.FC = () => {
   return (
@@ -22,14 +20,32 @@ const Footer: React.FC = () => {
               Curriculum
             </S.Link>
           </div>
+
           <div>
-            <img src={linkedin} alt="" />
-            <img src={github} alt="" />
+            <Title
+              color="#ffffff"
+              size="14px"
+              description="Perfis Profissionais"
+            />
+            <S.SocialMedias>
+              <S.BorderIcon
+                target="_blank"
+                href="https://github.com/otaviojneto"
+              >
+                <S.IconGitHub />
+              </S.BorderIcon>
+
+              <S.BorderIcon
+                target="_blank"
+                href="https://www.linkedin.com/in/otavio-lourenco-neto/"
+              >
+                <S.IconLinkedin size={20} />
+              </S.BorderIcon>
+            </S.SocialMedias>
           </div>
         </S.ContentFooter>
       </Container>
     </S.ContainerFooter>
   );
 };
-
 export default Footer;
