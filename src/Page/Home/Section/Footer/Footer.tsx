@@ -20,7 +20,7 @@ const Footer: React.FC<FooterProps> = ({ id }) => {
 
             <S.Link
               target="_blank"
-              href="https://drive.google.com/file/d/1rZGaDaEa-e7D0YJkaH6vSwbSihsUMOzb/view?usp=sharing"
+              href="https://drive.google.com/file/d/1qhR1zJlbDL5_9MXiAMmw_VsZU_KvVnME/view"
             >
               Curriculum
             </S.Link>
