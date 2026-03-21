@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@keyframes hero-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nav-slide-down {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 230px;
+    opacity: 1;
+  }
+}
+
+@keyframes nav-slide-up {
+  from {
+    height: 230px;
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
