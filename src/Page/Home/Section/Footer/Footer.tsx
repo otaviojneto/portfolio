@@ -23,8 +23,7 @@ const Footer: React.FC<FooterProps> = ({ id }) => {
             <a
               className="inline-block cursor-pointer rounded-[5px] border border-white px-4 py-2.5 text-sm font-semibold text-white no-underline transition-transform duration-300 ease-in-out hover:-translate-y-1 max-[1088px]:w-full max-[1088px]:text-center"
               target="_blank"
-              rel="noreferrer"
-              href="https://drive.google.com/file/d/1qhR1zJlbDL5_9MXiAMmw_VsZU_KvVnME/view?usp=sharing"
+              href="https://drive.google.com/file/d/1qhR1zJlbDL5_9MXiAMmw_VsZU_KvVnME/view"
             >
               Curriculum
             </a>
