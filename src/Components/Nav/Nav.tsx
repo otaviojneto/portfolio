@@ -28,7 +28,7 @@ const Nav: React.FC<NavProps> = ({ img, onNavigate }) => {
         />
 
         <nav>
-          <ul className="flex list-none max-[1088px]:hidden">
+          <ul className="flex list-none max-[1088px]:hidden z-50">
             {links.map((item) => (
               <li key={item.name}>
                 <button
