@@ -19,8 +19,8 @@ const Nav: React.FC<NavProps> = ({ img, onNavigate }) => {
   const [openMenu, setOpenMenu] = React.useState(false);
 
   return (
-    <div className="mx-auto flex max-w-[1200px] justify-center px-5">
-      <div className="fixed left-1/2 top-5 z-10 flex w-[60%] max-w-[1200px] -translate-x-1/2 items-center justify-between rounded-[60px] bg-white px-10 py-2 shadow-[0_10px_36px_0_rgba(0,0,0,0.16),0_0_0_1px_rgba(0,0,0,0.06)] max-[1088px]:left-[3%] max-[1088px]:w-[94%] max-[1088px]:translate-x-0 max-[1088px]:px-5">
+    <div className="mx-auto flex max-w-[1200px] justify-center px-5 z-50">
+      <div className="fixed left-1/2 top-5 z-50 flex w-[60%] max-w-[1200px] -translate-x-1/2 items-center justify-between rounded-[60px] bg-white px-10 py-2 shadow-[0_10px_36px_0_rgba(0,0,0,0.16),0_0_0_1px_rgba(0,0,0,0.06)] max-[1088px]:left-[3%] max-[1088px]:w-[94%] max-[1088px]:translate-x-0 max-[1088px]:px-5">
         <img
           src={img ?? brand}
           alt=""
@@ -54,7 +54,7 @@ const Nav: React.FC<NavProps> = ({ img, onNavigate }) => {
         </nav>
 
         <ul
-          className={`hidden max-[1088px]:absolute max-[1088px]:left-0 max-[1088px]:right-0 max-[108z8px]:top-0 max-[1088px]:block max-[1088px]:list-none max-[1088px]:overflow-hidden max-[1088px]:rounded-[30px] max-[1088px]:bg-white max-[1088px]:px-5 max-[1088px]:shadow-[0_10px_36px_0_rgba(0,0,0,0.16),0_0_0_1px_rgba(0,0,0,0.06)] ${openMenu
+          className={`hidden max-[1088px]:absolute top-0 max-[1088px]:left-0 max-[1088px]:right-0 max-[108z8px]:top-0 max-[1088px]:block max-[1088px]:list-none max-[1088px]:overflow-hidden max-[1088px]:rounded-[30px] max-[1088px]:bg-white max-[1088px]:px-5 max-[1088px]:shadow-[0_10px_36px_0_rgba(0,0,0,0.16),0_0_0_1px_rgba(0,0,0,0.06)] ${openMenu
             ? "max-[1088px]:animate-[nav-slide-down_0.2s_ease-in-out_forwards] z-50"
             : "max-[1088px]:animate-[nav-slide-up_0.2s_ease-in-out_forwards] z-50"
             }`}
