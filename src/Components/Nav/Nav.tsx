@@ -54,9 +54,9 @@ const Nav: React.FC<NavProps> = ({ img, onNavigate }) => {
         </nav>
 
         <ul
-          className={`hidden max-[1088px]:absolute max-[1088px]:left-0 max-[1088px]:right-0 max-[1088px]:top-0 max-[1088px]:z-20 max-[1088px]:block max-[1088px]:list-none max-[1088px]:overflow-hidden max-[1088px]:rounded-[30px] max-[1088px]:bg-white max-[1088px]:px-5 max-[1088px]:shadow-[0_10px_36px_0_rgba(0,0,0,0.16),0_0_0_1px_rgba(0,0,0,0.06)] ${openMenu
+          className={`hidden max-[1088px]:absolute max-[1088px]:left-0 max-[1088px]:right-0 max-[108z8px]:top-0 max-[1088px]:block max-[1088px]:list-none max-[1088px]:overflow-hidden max-[1088px]:rounded-[30px] max-[1088px]:bg-white max-[1088px]:px-5 max-[1088px]:shadow-[0_10px_36px_0_rgba(0,0,0,0.16),0_0_0_1px_rgba(0,0,0,0.06)] ${openMenu
             ? "max-[1088px]:animate-[nav-slide-down_0.2s_ease-in-out_forwards] z-50"
-            : "max-[1088px]:animate-[nav-slide-up_0.2s_ease-in-out_forwards]"
+            : "max-[1088px]:animate-[nav-slide-up_0.2s_ease-in-out_forwards] z-50"
             }`}
         >
           <li className="max-[1088px]:flex max-[1088px]:list-none max-[1088px]:items-center max-[1088px]:justify-between max-[1088px]:bg-transparent max-[1088px]:py-2">
